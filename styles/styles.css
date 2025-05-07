@@ -1,4 +1,5 @@
 /* remove default browser spacing*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,30 +11,45 @@ body {
 }
 
 .container {
+  -webkit-text-fill-color: #34607d;
   width: 200px;
   margin: 30px auto;
   padding: 10px;
-  background-color: #457a97;
+  background-color: #f8f8f8;
   border: 1px solid #d35400;
   border-radius: 10px;
-  box-shadow: #b8660e 5px;
+  box-shadow: #b8660e 5px 5px;
 }
 
 button {
   width: 90px;
   height: 20px;
   margin: 15px;
-  border: #457a97;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: background color 0.3s ease-in-out;
 }
 
 #confirm-order-button {
-  background-color: #457a97;
-  color: #0a0a0a;
+  background-color: #d35400;
+  color: #b8660e;
 }
-
+#confirm-order-button:hover {
+  background-color: #d35400;
+}
 #cancel-order-button {
-  background-color: #457a97;
-  color: #0a0a0a;
+  background-color: #d35400;
+  color: #d35400;
+  -webkit-text-fill-color: #f8f8f8;
+}
+#cancel-order-button-container {
+  background-color: #d35400;
+}
+#back-to-home-button {
+  background-color: #d35400;
+  color: #d35400;
+  -webkit-text-fill-color: #f8f8f8;
 }
