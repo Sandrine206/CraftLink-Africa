@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Summary</title>
+    <!-- add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- local style -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/checkoutSummary.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Checkout Summary</h1>
+
+      <div class="checkout-grid">
+        <!-- Left column for order details -->
+        <div class="checkout-details">
+          <!-- Order items -->
+          <div class="card">
+            <h2>Order Items</h2>
+            <div class="order-items">
+              <div class="item">
+                <div class="item-details">
+                  <p class="item-name">Tote Bag</p>
+                  <p class="item-quantity">Quantity: 2</p>
+                </div>
+                <p class="item-price">₦47,000</p>
+              </div>
+              <div class="item">
+                <div class="item-details">
+                  <p class="item-name">Leather Sandal</p>
+                  <p class="item-quantity">Quantity: 1</p>
+                </div>
+                <p class="item-price">₦28,000</p>
+              </div>
+              <div class="item">
+                <div class="item-details">
+                  <p class="item-name">Ankara Top</p>
+                  <p class="item-quantity">Quantity: 1</p>
+                </div>
+                <p class="item-price">₦40,000</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shipping details -->
+          <div class="card">
+            <h2>Shipping Details</h2>
+            <div class="shipping-details">
+              <p><span class="label">Name:</span> Adeola Ogunleye</p>
+              <p><span class="label">Address:</span> 12B Lekki Phase 1</p>
+              <p><span class="label">City:</span> Lagos</p>
+              <p><span class="label">State:</span> Lagos State</p>
+              <p><span class="label">Zip Code:</span> 105102</p>
+              <p><span class="label">Country:</span> Nigeria</p>
+            </div>
+          </div>
+
+          <!-- Payment method -->
+          <div class="card">
+            <h2>Payment Method</h2>
+            <div class="payment-details">
+              <p><span class="label">Type:</span> Debit Card</p>
+              <p><span class="label">Card Number:</span> **** **** **** 1234</p>
+              <p><span class="label">Expiry Date:</span> 12/26</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column for order summary -->
+        <div class="order-summary">
+          <div class="card">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+              <div class="summary-row">
+                <p>Subtotal</p>
+                <p>₦115,000</p>
+              </div>
+              <div class="summary-row">
+                <p>Shipping</p>
+                <p>₦3,000</p>
+              </div>
+              <div class="summary-row">
+                <p>Tax</p>
+                <p>₦9,200</p>
+              </div>
+              <div class="summary-row total">
+                <p>Total</p>
+                <p>₦127,200</p>
+              </div>
+            </div>
+
+            <div class="button-group">
+              <button id="proceed-button" class="btn primary-btn">
+                Proceed to Payment
+              </button>
+              <button id="back-button" class="btn secondary-btn">
+                ← Back to Billing
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/checkoutSummary.js"></script>
+  </body>
+</html>
