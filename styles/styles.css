@@ -22,8 +22,732 @@
 }
 
 body {
-  background-color: var(--background-light);
-  font-family: "Lato", sans-serif;
-}
+    background-color: var(--background-light);
+    font-family: "Lato", sans-serif;
+    font-size: var(--body-text);
+    color: var(--text-color);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
 
-/* Add any extra styles you want to keep from main or checkoutSummary here */
+  .site-header {
+    background-color: var(--background-light);;
+    color: var(--text-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header-flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    font-weight: 500;
+  }
+
+  .main-nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  .logo {
+    font-size: var(--fs-lg);
+    font-weight: bold;
+    color: var(--primary-color);
+    flex: 1;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .header-cta {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cta-button {
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: var(--background-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover{
+    background-color: var(--primary-dark-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  
+  
+  /* Hero Section */
+  
+  .hero-container{
+    width: 100%;
+    height: auto;
+    background-color: var(--background-light);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 5rem;
+    
+  }
+  
+  .hero-text{
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-image-container{
+    width: 100%;
+    height: auto;
+  }
+  .hero h2 {
+    font-size: var(--header-text);
+    margin-bottom: 1rem;
+    color: var(--big-text-color);
+  }
+  
+  .hero p {
+    font-size: var(--Mdbody-text-size);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+  
+  .cta-btn {
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--background-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+  }
+
+  .cta-btn:hover{
+    background-color: var(--primary-dark-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-btn2 {
+    border: 2px solid  #B8660E;
+    color:  #B8660E;
+    background-color: var(--background-light);
+    padding: 0.75rem 1.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+   
+  }
+
+  .cta-btn2:hover{
+    color: var(--primary-dark-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid  #d35400;
+  }
+  
+ 
+  /* Features Section */
+  .features {
+    background-color: white;
+  }
+
+  .features-container{
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-header {
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .f-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .feature {
+    flex: 0 1 calc(50% - 2rem); 
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  
+  .features h3 {
+    font-size: var(--Mdbody-text-size);
+    color: var(--big-text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .features p {
+    font-size: var(--body-text);
+    color: var(--text-color);
+    font-weight: 300;
+  }
+
+  .product-scroll-section {
+    padding: 4rem;
+    background-color: var(--background-light);
+  }
+  
+  .section-title {
+    font-size: var(--fs-xl);
+    color: var(--big-text-color);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .product-row {
+    display: flex;
+    gap: 3rem;
+    animation: scroll-products 30s linear infinite;
+    width: max-content;
+  }
+  
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    
+  }
+  
+  .product-name-btn {
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    color: var(--big-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-name-btn:hover {
+    background-color: var(--primary-dark-hover);
+    color: var(--background-light);
+  }
+
+  .product-name-btn3 {
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    color: var(--big-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-name-btn3:hover {
+    background-color: var(--primary-dark-hover);
+    color: var(--background-light);
+  }
+  
+  .arrow {
+    font-size: 1rem;
+  }
+
+  .seeAll-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  .seeAllcta-button {
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--background-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  .seeAllcta-button:hover {
+    background-color: var(--primary-dark-hover);
+    color: var(--background-light);
+  }
+ 
+  
+  
+  @keyframes scroll-products {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .impact-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .impact-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .impact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    width: 220px;
+    transition: transform 0.3s ease;
+  }
+  
+  .impact-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .impact-icon {
+    font-size: 2rem;
+    color: #b8660e;
+    margin-bottom: 1rem;
+  }
+  
+  .impact-number {
+    font-size: 1.8rem;
+    color: #222;
+    margin: 0;
+  }
+  
+  .impact-label {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
+
+  
+
+  .book-container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 6rem;
+    
+  }
+  
+  .book h2 {
+    font-size: var(--fs-xl);
+    margin-bottom: 1rem;
+    color: var(--big-text-color);
+  }
+  
+  .book p {
+    font-size: var(--Mdbody-text-size);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+  
+  .cta-btn {
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--background-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+  }
+
+  .cta-btn:hover{
+    background-color: var(--primary-dark-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .testimonial-section {
+    background-color: white;
+    padding: 4rem 2rem;
+  }
+  
+  .testimonial-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .testimonial-card {
+    background-color: var(--background-light);
+    border-left: 5px solid var(--primary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 350px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .testimonial-text {
+    font-size: var(--body-text-);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-author {
+    font-size: var(--fs-sm);
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .artisan-signup-cta {
+    background: linear-gradient(to right, #B8660E, #E3A75D);
+    color: white;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 4rem auto;
+    max-width: 900px;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Tsignup-btn{
+    background-color: var(--background-light);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .Tsignup-btn:hover{
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--background-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .limited-container{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .offer-image{
+    width: 100%;
+    height: 30%;
+  }
+  .offer-detail{
+    width: 100%;
+    background-color: var(--text-color);
+    color: var(--background-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  .offer-header{
+    font-size: var(--header-text);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .product-name-btnoffer{
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--background-light);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+  }
+
+  .product-name-btnoffer:hover{
+    background-color: var(--primary-dark-hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter-section {
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .newsletter-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-title {
+    font-size: var(--fs-xl);
+    color: var(--big-text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter-subtitle {
+    font-size: var(--body-text);
+    color: var(--text-color);
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter-form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 250px;
+  }
+  
+  .newsletter-form button {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: var(--primary-dark-hover);
+  }
+  
+  
+  /* Footer */
+  .site-footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 2rem 1rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    flex: 1 1 250px;
+  }
+  
+  .footer-about h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-about p {
+    font-size: 0.95rem;
+    color: white;
+  }
+  
+  .footer-links h4,
+  .footer-social h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #f8c77e;
+  }
+  
+  .social-icons a {
+    color: #f8c77e;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  
