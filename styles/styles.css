@@ -1,7 +1,36 @@
+<<<<<<< HEAD
 /* remove default browser spacing*/
 * {
   margin: 0;
   padding: 0;
+=======
+ /* remove default browser spacing*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root {
+    /* colors to be used*/
+
+    --primary-color: #B8660E;
+    --primary-dark-hover: #d35400;
+    --secondary-color: #457A97;
+    --background-light: #f8f8f8;
+    --text-color: #0A0A0A;
+    --big-text-color: #353A4A; 
+
+
+    /* Font Sizes */
+    --fs-xs: 12px;
+    --fs-sm: 14px;
+    --body-text-: 16px;
+    --Mdbody-text-size: 18px;
+    --fs-lg: 24px;
+    --fs-xl: 32px;
+    --header-text: 48px; 
+>>>>>>> 64367819e37d9689c8dab434c0c1b9581c3c769a
 }
 
 body {
