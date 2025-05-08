@@ -1,4 +1,4 @@
-/* remove default browser spacing*/
+/* remove default browser spacing */
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +6,12 @@
 }
 
 :root {
-  /* colors to be used*/
-
   --primary-color: #b8660e;
   --primary-dark-hover: #d35400;
   --secondary-color: #457a97;
   --background-light: #f8f8f8;
   --text-color: #0a0a0a;
   --big-text-color: #353a4a;
-
-  /* Font Sizes */
   --fs-xs: 12px;
   --fs-sm: 14px;
   --body-text-: 16px;
@@ -25,11 +21,9 @@
   --header-text: 48px;
 }
 
-/*title text style*/
-/* the font-family 'Lato sans-serif', has been linked
-* and is available for your use
-* */
 body {
   background-color: var(--background-light);
   font-family: "Lato", sans-serif;
 }
+
+/* Add any extra styles you want to keep from main or checkoutSummary here */
